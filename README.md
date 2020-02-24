@@ -72,10 +72,11 @@ Execute `wmio deploy` to deploy this connector to your webmethods.io tenant. And
 ### Tableau Server versions and REST API versions
 Versions of the REST API are made available with releases of Tableau Server. The following table lists versions of Tableau Server and of the corresponding REST API and REST API schema versions.
 
-
+![image](https://user-images.githubusercontent.com/20556391/75151490-d01d9a80-572c-11ea-9341-ca1ad30b70da.png)
 
 ## Built With
 Node v8.14.0 and [wmiocli](https://docs.webmethods.io/integration/developer_guide/connector_builder/#gsc.tab=0), webmethod.io's iPaaS Connector Builder CLI.
+#### This community connector was built using Tableau Online and uses the 3.4 version of Tabkeau REST API.
 
 ## Contributors
 [Anshuman Saikia](https://github.com/anshu96788) |
