@@ -13,7 +13,7 @@ This is a Webmethods.io community connector for [Tableau](https://www.tableau.co
 Learn about other supported actions [here](https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_ref.htm).
 
 #### Note: 
-The response contains two pieces of information that you will need to complete the rest of the tasks in this tutorial:
+The response contains two pieces of information that you will need to interact with the Tableau REST API:
 
 1. The value of the credentials token: This token will allow the other calls to be authenticated as valid by your Tableau Server. To keep things secure, the token has a time limit, typically 2 hours. After that you'll need to sign in again and use the new token from the response for following requests.
 2. The value of site id: This is the identifier for the site on your Tableau Server that you define in the contentUrl in your request body. Your users, workbooks and views are all children of your site object, and you need this identifier to make REST calls to them. If contentUrl is empty, then the default site’s id is returned.
