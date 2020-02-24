@@ -75,7 +75,7 @@ Versions of the REST API are made available with releases of Tableau Server. The
 
 ## Built With
 Node v8.14.0 and [wmiocli](https://docs.webmethods.io/integration/developer_guide/connector_builder/#gsc.tab=0), webmethod.io's iPaaS Connector Builder CLI.
-#### This community connector was built using Tableau Online and uses the 3.4 version of Tabkeau REST API.
+#### This community connector was built using [Tableau Online](https://www.tableau.com/trial/tableau-online?utm_campaign_id=2017049&utm_campaign=Prospecting-PROD-ALL-ALL-ALL-ALL&utm_medium=Paid+Search&utm_source=Google+Search&utm_language=EN&utm_country=IND&kw=tableau%20online&adgroup=CTX-Brand-Tableau+Online-EN-E&adused=324827190946&matchtype=e&placement=&gclid=CjwKCAiAhc7yBRAdEiwAplGxXz7x0PHLLtyE5MtIP2J4oh3HLhS09giT0tcRhFLHw4IrpCCi-qXFohoCGaMQAvD_BwE&gclsrc=aw.ds) and uses the 3.4 version of Tableau REST API.
 
 ## Contributors
 [Anshuman Saikia](https://github.com/anshu96788) |
