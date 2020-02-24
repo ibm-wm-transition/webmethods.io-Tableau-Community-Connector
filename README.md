@@ -1,5 +1,5 @@
 # webmethods.io-Tableau-Community-Connector
-This is a Webmethods.io community connector for [BambooHR](https://en.wikipedia.org/wiki/BambooHR), a cloud-based human resources (HR) software service. The connector uses the [BambooHR REST API](https://documentation.bamboohr.com/reference#get-employee-dependents-1) to make HTTP requests to access or modify a resource. The actions supported by this community connector are:
+This is a Webmethods.io community connector for [Tableau](https://www.tableau.com/), a powerful and fast growing data visualization tool used in the Business Intelligence Industry. The connector uses the [Tableau REST API](https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_ref.htm#api-examples) to make HTTP requests to access or modify a resource. The actions supported by this community connector are:
 
 #### 1. [Add User to Group](https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_ref.htm#add_user_to_group)
 #### 2. [Create Group](https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_ref.htm#create_group)
@@ -17,10 +17,9 @@ The response contains two pieces of information that you will need to complete t
 
 1. The value of the credentials token: This token will allow the other calls to be authenticated as valid by your Tableau Server. To keep things secure, the token has a time limit, typically 2 hours. After that you'll need to sign in again and use the new token from the response for following requests.
 2. The value of site id: This is the identifier for the site on your Tableau Server that you define in the contentUrl in your request body. Your users, workbooks and views are all children of your site object, and you need this identifier to make REST calls to them. If contentUrl is empty, then the default site’s id is returned.
-3. Every REST call to the server after sign in needs to pass a valid token to succeed. To pass the token you place it in the request header as a key/value pair:
+3. Every REST call to the server after sign in needs to pass a valid credentials token to succeed. To pass the token you place it in the request header as a key/value pair:
 
-
-
+![image](https://user-images.githubusercontent.com/20556391/75151087-dc552800-572b-11ea-8396-1f1dedd8ab83.png)
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -69,6 +68,11 @@ To test, you can execute `wmio test`.
 Execute `wmio deploy` to deploy this connector to your webmethods.io tenant. And `wmio unpublish` to unpublish the published connector app along with triggers and actions associated with the app.
 
 ![image](https://user-images.githubusercontent.com/20556391/75150886-605ae000-572b-11ea-85df-01c93df60705.png)
+
+### Tableau Server versions and REST API versions
+Versions of the REST API are made available with releases of Tableau Server. The following table lists versions of Tableau Server and of the corresponding REST API and REST API schema versions.
+
+
 
 ## Built With
 Node v8.14.0 and [wmiocli](https://docs.webmethods.io/integration/developer_guide/connector_builder/#gsc.tab=0), webmethod.io's iPaaS Connector Builder CLI.
