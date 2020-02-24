@@ -46,7 +46,7 @@ To test, you can execute `wmio test`.
 ## Deployment
 Execute `wmio deploy` to deploy this connector to your webmethods.io tenant. And `wmio unpublish` to unpublish the published connector app along with triggers and actions associated with the app.
 
-![BambooHR Connector](https://user-images.githubusercontent.com/16189220/74911246-3b403780-53e2-11ea-8789-be34e42a1d4f.png)
+![gif](https://help.tableau.com/current/api/rest_api/en-us/Img/postman_auth.gif)
 
 ## Built With
 Node v8.14.0 and [wmiocli](https://docs.webmethods.io/integration/developer_guide/connector_builder/#gsc.tab=0), webmethod.io's iPaaS Connector Builder CLI.
