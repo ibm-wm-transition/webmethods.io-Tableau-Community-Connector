@@ -28,11 +28,23 @@ Note: If you have installed any other Node version on your system, you can:
 
 The connector has been built with [wmiocli](https://docs.webmethods.io/integration/developer_guide/connector_builder/#gsc.tab=0), webmethod.io's iPaaS Connector Builder CLI tool, which must be installed. 
 
-### Getting the API key 
-To generate an API key, make a REST sign in request using Postman. 
+### Getting the access credentials
+To generate the necessary access credentials, make a REST sign in request using Postman. 
+1. Open Postman and select +New > Request.
+2. In Request name, type "Sign in".
+3. Choose +Create collection and name the new collection “REST Tutorial Collection".
+4 Choose the check mark on the right of the form field, then choose Save to REST Tutorial Collection.
+5. Change the verb on the upper left to POST, and then replace "Enter request URL " with your URI.
+6. Select Body, then select raw.
+7. Copy/Paste the body XML from the preceding section into the raw body area, ensuring the placeholders have been replaced with valid values.
+8. Choose Send, then scroll down to view the response panel.
+
+Below is a GIF that shows the above steps in action.
+
+![gif](https://help.tableau.com/current/api/rest_api/en-us/Img/postman_auth.gif)
 
 ### Installing
-1. Clone the repo `https://github.com/yuvanmytri/webmethods.io-BambooHR-Community-Connector.git`.
+1. Clone the repo `https://github.com/yuvanmytri/webmethods.io-Tableau-Community-Connector.git`.
 2. Run `npm install -g @webmethodsio/wmiocli`.
 3. Login to your webmethods.io tenant using `wmio login`.
 4. Execute `wmio init` to get started.
@@ -45,8 +57,6 @@ To test, you can execute `wmio test`.
 
 ## Deployment
 Execute `wmio deploy` to deploy this connector to your webmethods.io tenant. And `wmio unpublish` to unpublish the published connector app along with triggers and actions associated with the app.
-
-![gif](https://help.tableau.com/current/api/rest_api/en-us/Img/postman_auth.gif)
 
 ## Built With
 Node v8.14.0 and [wmiocli](https://docs.webmethods.io/integration/developer_guide/connector_builder/#gsc.tab=0), webmethod.io's iPaaS Connector Builder CLI.
