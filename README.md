@@ -12,7 +12,7 @@ This is a Webmethods.io community connector for [Tableau](https://www.tableau.co
 
 Learn about other supported actions [here](https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_ref.htm).
 
-#### Note: 
+### Note: 
 The response contains two pieces of information that you will need to interact with the Tableau REST API:
 
 1. **The value of the credentials token**: This token will allow the other calls to be authenticated as valid by your Tableau Server. **To keep things secure, the token has a time limit, typically 2 hours**. After that you'll need to sign in again and use the new token from the response for following requests.
@@ -49,7 +49,6 @@ To generate the necessary access credentials, make a REST sign in request using 
 8. Choose Send, then scroll down to view the response panel.
 
 Below is a GIF that shows the above steps in action.
-
 ![gif](https://help.tableau.com/current/api/rest_api/en-us/Img/postman_auth.gif)
 
 ### Installing
@@ -69,7 +68,7 @@ Execute `wmio deploy` to deploy this connector to your webmethods.io tenant. And
 
 ![image](https://user-images.githubusercontent.com/20556391/75150886-605ae000-572b-11ea-85df-01c93df60705.png)
 
-### Tableau Server versions and REST API versions
+## Tableau Server versions and REST API versions
 Versions of the REST API are made available with releases of Tableau Server. The following table lists versions of Tableau Server and of the corresponding REST API and REST API schema versions.
 
 ![image](https://user-images.githubusercontent.com/20556391/75151490-d01d9a80-572c-11ea-9341-ca1ad30b70da.png)
