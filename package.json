@@ -1,0 +1,11 @@
+{
+  "name": "tableau",
+  "version": "1.0.0",
+  "description": "This is a webmethods.io connector for Tableau",
+  "dependencies": {
+    "@webmethodsio/cli-sdk": "*",
+    "request": "2.55.0",
+    "xml-js": "^1.6.11",
+    "xmlbuilder": "^14.0.0"
+  }
+}

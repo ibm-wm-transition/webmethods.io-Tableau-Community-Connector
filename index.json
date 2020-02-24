@@ -1,0 +1,54 @@
+{
+  "name": "Tableau",
+  "description": "This is a webmethods.io connector for Tableau",
+  "triggers": [],
+  "actions": [
+    "/v1/query_projects",
+    "/v1/create_project",
+    "/v1/update_project",
+    "/v1/delete_project",
+    "/v1/create_group",
+    "/v1/get_users_in_group",
+    "/v1/query_groups",
+    "/v1/add_user_to_group"
+  ],
+  "version": 1,
+  "auth_type": "custom",
+  "docs_link": "http://docs.example.com",
+  "appId": "84393b9c-c12e-4925-9eaa-81f582e07220",
+  "guid": "da9472dc-5b15-4d82-b663-e2aab8902a3d",
+  "connectionUid": "tableau_1582277762556",
+  "lookup": true,
+  "lookup_attachments": [
+    {
+      "lookup_id": "get_list_of_projects",
+      "action_id": "/v1/update_project",
+      "field_id": "projectId",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "get_list_of_projects",
+      "action_id": "/v1/delete_project",
+      "field_id": "projectId",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "get_list_of_groups",
+      "action_id": "/v1/get_users_in_group",
+      "field_id": "groupId",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "get_list_of_groups",
+      "action_id": "/v1/add_user_to_group",
+      "field_id": "groupId",
+      "dependencies": []
+    },
+    {
+      "lookup_id": "get_users_on_site",
+      "action_id": "/v1/add_user_to_group",
+      "field_id": "userId",
+      "dependencies": []
+    }
+  ]
+}
